@@ -1,4 +1,4 @@
-export function StreamingEntretenimiento(){
+function StreamingEntretenimiento(){
 
     let productosEntretenimiento = [
         {foto:'img/Logo-Netflix.png', nombre:"Netflix", precio:35000},
@@ -18,6 +18,9 @@ export function StreamingEntretenimiento(){
         //console.log[producto.foto]
         //console.log[producto.nombre]
         //console.log[producto.precio]
+    
+        //Pintando etiquetas
+    
     
         //div con la clase col
         let columna = document.createElement("div")
@@ -61,7 +64,7 @@ export function StreamingEntretenimiento(){
     })
 }
 
-/*Llamar una funcion ----> StreamingEntretenimiento()*/
+/*Llamar una funcion ---->*/ StreamingEntretenimiento()
 
 
 //Evento guardado en carro
