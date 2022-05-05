@@ -1,11 +1,11 @@
 export function StreamingEntretenimiento(){
 
     let productosEntretenimiento = [
-        {foto:'img/Logo-Netflix.png', nombre:"Netflix", precio:35000},
-        {foto:'img/Disney+_logo.svg.png', nombre:"Disney", precio:20000},
-        {foto:'img/Amazon-Prime-Video-Emblem.png', nombre:"Amzone Prime Video", precio:20000},
-        {foto:'img/HBO-Max-Logo.png', nombre:"HBOmax", precio:24000},
-        {foto:'img/Star+_logo.svg.png', nombre:"Star +", precio:24000}
+        {foto:'img/Logo-Netflix.png', nombre:"Netflix", descripcion:"1 Pant/Mes", precio:35000},
+        {foto:'img/Disney+_logo.svg.png', nombre:"Disney", descripcion:"1 Pant/Mes", precio:20000},
+        {foto:'img/Amazon-Prime-Video-Emblem.png', nombre:"Amzone Prime Video", descripcion:"1 Pant/Mes", precio:20000},
+        {foto:'img/HBO-Max-Logo.png', nombre:"HBOmax", descripcion:"1 Pant/Mes", precio:24000},
+        {foto:'img/Star+_logo.svg.png', nombre:"Star +", descripcion:"1 Pant/Mes", precio:24000}
     ]
     
     //console.log(productosBD)
@@ -30,13 +30,18 @@ export function StreamingEntretenimiento(){
     
         //img con la clase card-img-top
         let foto = document.createElement("img")
-        foto.classList.add("card-img-top")
+        foto.classList.add("card-img-top","p-2","h-100")
         foto.src = producto.foto
     
         //crear titulo de texto
         let titulo = document.createElement("h4")
         titulo.classList.add("text-center")
         titulo.textContent = producto.nombre
+
+        //crear drecripcion del producto
+        let descripcion = document.createElement("p")
+        descripcion.classList.add("text-center")
+        descripcion.textContent = producto.descripcion
     
         //Crear Precio de producto
         let precio = document.createElement("h5")
@@ -49,13 +54,13 @@ export function StreamingEntretenimiento(){
         boton.textContent = "Comprar Ahora"
     
         //padres e hijos de cuadro
-        tarjeta.appendChild(foto)
         columna.appendChild(tarjeta)
         fila.appendChild(columna)
     
         //padre e hijos el contenido de cuadro
         tarjeta.appendChild(foto)
         tarjeta.appendChild(titulo)
+        tarjeta.appendChild(descripcion)
         tarjeta.appendChild(precio)
         tarjeta.appendChild(boton)
     })

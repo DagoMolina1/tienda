@@ -5,6 +5,8 @@ export function ampliarInformacionProducto(evento){
     //Llenar informacion del producto
     producto.foto = evento.target.parentElement.querySelector("img").src
     producto.nombre = evento.target.parentElement.querySelector("h4").textContent
+    producto.descripcion = evento.target.parentElement.querySelector("p").textContent
+    producto.precio = evento.target.parentElement.querySelector("h5").textContent
 
     let fotoInfo = document.getElementById("fotoInfo")
     fotoInfo.src = evento.target.parentElement.querySelector("img").src
@@ -12,21 +14,12 @@ export function ampliarInformacionProducto(evento){
     let tituloInfo = document.getElementById("tituloInfo")
     tituloInfo.textContent = evento.target.parentElement.querySelector("h4").textContent
 
-    //Devolver el producto general
+    let descripcionInfo = document.getElementById("descripcionInfo")
+    descripcionInfo.textContent = evento.target.parentElement.querySelector("p").textContent
+
+    let precioInfo = document.getElementById("precioInfo")
+    precioInfo.textContent = evento.target.parentElement.querySelector("h5").textContent
+
+    //Devolver el producto generado
     return producto
 }
-
-//Evento guardado en carro
-/*let filaContenedora = document.getElementById("fila")
-filaContenedora.addEventListener("click", function (evento) {
-    if (evento.target.classList.contains("btn")) {
-        console.log(evento.target.parentElement.querySelector("h4").textContent)
-        console.log(evento.target.parentElement.querySelector("img").src)
-        console.log(evento.target.parentElement.querySelector("h5").textContent)
-
-        let fotoInfo = document.getElementById("fotoInfo")
-
-        let myModal = new bootstrap.Modal(document.getElementById('modalInfo'))
-        myModal.show()
-    }
-})*/

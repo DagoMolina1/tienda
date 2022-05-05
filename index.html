@@ -6,8 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Streaming</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="stylesheet" href="Css/estilos.css">
+        <link rel="stylesheet" href="Css/Footer.css">
     </head>
+
     <body>
         <header>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark animate__animated animate__backInLeft">
@@ -25,7 +31,7 @@
                                 <a class="nav-link" href="tienda.html">Contacto</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"    aria-expanded="false">Tienda</a>
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tienda</a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="entretenimiento.html">Plataformas De Entretenimiento</a></li>
                                     <li><a class="dropdown-item" href="plataformaMusica.html">Plataformas De Musica</a></li>
@@ -40,29 +46,38 @@
                 </div>
             </nav>
         </header>
+
         <main>
             <img src="img/StreamingPortadaPrincipal.jpg" alt="PortadaPrincipal" class="img-fluid w-100">
+
             <section>
-                <div class="container mt-5 mb-3">
-                    <div class="row">
-                        <div class="col-8 aling-self-center">
-                            <h3 id="Introduccion-Titulo">Introduccion</h3>
-                            <p>Esta pagina va enfocada al rendimiento que pueden tener todo los usuarios que gustan de las plataformas de streaming; aca encontraremos información de cada plataforma, ademas en el sitio de compras podras observar diversas promociones y planes que se manejan.</p>
-                            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                                Información del programador
+                <div class="row justify-content-center my-5">
+                    <div class="col-5">
+                        <form style="background-color: white;" id="formularioregistro">
+                            <div class="mb-3">
+                                <label class="form-label">
+                                    <b>Email</b>
+                                </label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">
+                                    <b>Password</b>
+                                </label>
+                                <input type="password" class="form-control" id="password">
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100" id="botonregistro">
+                                Registro
                             </button>
-                        </div>
-                        <div class="col-4">
-                            <img src="img/StreamingSinFondo.png" alt="StreamingDescripcionSin" class="w-100 img-fluid" id="Titulo-Introduccion">
-                        </div>
+                        </form>
                     </div>
                 </div>
             </section>
+
             <section>
                 <div class="container mt-5 mb-3">
                     <div class="row">
-                        <div class="col-8 aling-self-center">
+                        <div class="col-8 aling-self-center" style="background-color: white;">
                             <h3 id="Netflix-Titulo">¿De que trata?</h3>
                             <p>Netflix es un servicio de streaming por suscripción que les permite a sus miembros ver series y películas sin publicidades en un dispositivo con conexión a internet.</p>
                             <br>
@@ -71,16 +86,17 @@
                                 Ir a Netflix
                             </a>
                         </div>
-                        <div class="col-4">
-                            <img src="img/Netflix-Logo.webp" alt="StreamingDescripcionSin" class="w-100 img-fluid" id="Titulo-NetflixImg">
+                        <div class="col-4 aling-self-center">
+                            <img src="img/Netflix-Logo.webp" alt="StreamingDescripcionSin" style="max-height: 250px;" id="Titulo-NetflixImg">
                         </div>
                     </div>
                 </div>
             </section>
+
             <section>
                 <div class="container mt-5 mb-3">
                     <div class="row">
-                        <div class="col-8 aling-self-center">
+                        <div class="col-8 aling-self-center" style="background-color: white;">
                             <h3 id="Disney-Titulo">¿De que trata?</h3>
                             <p>Disney+ es un servicio de transmisión de video (streaming) propiedad de Disney. Es similar a servicios como Netflix, Apple TV+ y Amazon Prime Video, ya que se trata de un servicio de video a pedido con una biblioteca de películas y programas de TV que se pueden ver en cualquier momento y en una amplia gama de dispositivos. Se anunció en septiembre de 2017 y se lanzó finalmente el pasado 12 de noviembre de 2019.</p>
                             <br>
@@ -90,134 +106,176 @@
                             </a>
                         </div>
                         <div class="col-4">
-                            <img src="img/Disney+_logo.svg.png" alt="StreamingDescripcionSin" class="w-100 img-fluid" id="Titulo-DisneyImg">
+                            <img src="img/Disney+_logo.svg.png" alt="StreamingDescripcionSin" style="max-height: 250px;" class="w-100 img-fluid" id="Titulo-DisneyImg">
                         </div>
                     </div>
                 </div>
             </section>
+
             <section>
                 <div class="container mt-5 mb-3">
                     <div class="row">
-                        <div class="col-8 aling-self-center">
+                        <div class="col-8 aling-self-center" style="background-color: white;">
                             <h3 id="StarPlus-Titulo">¿De que trata?</h3>
                             <p>La plataforma proporciona contenidos de entretenimiento general tanto producidas por Disney como por sus subsidiarias. (Suele enfocarse en programación para el público juvenil y adulto no disponibles en Disney+). Muchos de estos programas provienen de las productoras ABC Signature, 20th Television, 20th Television Animation, FX, Freeform, Hulu, 20th Century Studios, Searchlight Pictures, Touchstone Pictures, Hollywood Pictures, Buena Vista International, Caravan Pictures, Marvel, Fox Networks Group, BBC Studios, AMC Studios, Star Original Productions, National Geographic Original Productions y más, algunas películas de Universal Pictures (solo películas que habían sido estrenadas dos años antes en HBO, a pesar un trato con Universal+ y Netflix) y Además, la plataforma cuenta con programas y eventos deportivos en vivo de ESPN.</p>
-                            <button class = "btn btn-primary", type = "button" href= "">
+                            <a class="btn btn-primary" type="button" href="https://www.starplus.com/es-419/login">
                                 Ir a Star Plus
-                            </button>
+                            </a>
                         </div>
                         <div class="col-4">
-                            <img src="img/Star+_logo.svg.png" alt="StreamingDescripcionSin" class="w-100 img-fluid" id="Titulo-StarPlusImg">
+                            <img src="img/Star+_logo.svg.png" alt="StreamingDescripcionSin" style="max-height: 250px;" class="w-100 img-fluid" id="Titulo-StarPlusImg">
                         </div>
                     </div>
                 </div>
             </section>
+
             <section>
                 <div class="container mt-5 mb-3">
                     <div class="row">
-                        <div class="col-8 aling-self-center">
+                        <div class="col-8 aling-self-center" style="background-color: white;">
                             <h3 id="Amazone-Titulo">¿De que trata?</h3>
                             <p>Amazon Prime Video, también comercializado como Prime Video, es un servicio de videos (películas y series) disponible en retransmisión en directo, creado y gestionado por Amazon. La plataforma ofrece miles de títulos sin coste adicional a la afiliación mensual o anual a Prime Video.</p>
-                            <button class = "btn btn-primary", type = "button" href= "">
+                            <a class = "btn btn-primary", type = "button" href= "https://www.amazon.com/ap/signin?clientContext=132-1847446-4407305&openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.primevideo.com%2Fauth%2Freturn%2Fref%3Dav_auth_ap%3Flocation%3D%2Fsettings%3Fref_%253Ddv_auth_ret&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&accountStatusPolicy=P1&openid.assoc_handle=amzn_prime_video_desktop_us&openid.mode=checkid_setup&language=es_ES&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0">
                                 Ir a Prime Video
-                            </button>
+                            </a>
                         </div>
                         <div class="col-4">
-                            <img src="img/Amazon-Prime-Video-Emblem.png" alt="StreamingDescripcionSin" class="w-100 img-fluid" id="Titulo-AmazoneImg">
+                            <img src="img/Amazon-Prime-Video-Emblem.png" alt="StreamingDescripcionSin" style="max-height: 250px;" class="w-100 img-fluid" id="Titulo-AmazoneImg">
                         </div>
                     </div>
                 </div>
             </section>
+
             <section>
                 <div class="container mt-5 mb-3">
                     <div class="row">
-                        <div class="col-8 aling-self-center">
+                        <div class="col-8 aling-self-center" style="background-color: white;">
                             <h3 id="Hbo-Titulo">¿De que trata?</h3>
                             <p>HBO Max es un servicio de streaming propiedad de WarnerMedia, una división de AT&T. Se lanzó en Estados Unidos el 27 de mayo de 2020, en América Latina y el Caribe el 29 de junio de 2021 y en Andorra, España y los países nórdicos el 26 de octubre de 2021. A lo largo de 2022 se expandirá a más países de Europa y Asia.</p>
                             <br>
                             <p>HBO Max fue creado principalmente para albergar contenido del grupo de canales premium HBO, aunque también sirve como plataforma de difusión de las producciones de WarnerMedia en general y, además, ofrece contenido adicional de empresas terceras y producciones originales para la plataforma, conocidas como Max Originals.</p>
                             <br>
                             <p>Según AT&T (matriz de WarnerMedia), tanto HBO como HBO Max juntos poseen un total de 73,8 millones de suscriptores al nivel mundial (cifras hasta el 31 de diciembre de 2021).</p>
-                            <button class = "btn btn-primary", type = "button" href= "">
+                            <a class = "btn btn-primary", type = "button" href= "https://play.hbomax.com/page/urn:hbo:page:home">
                                 Ir a HboMax
-                            </button>
+                            </a>
                         </div>
                         <div class="col-4">
-                            <img src="img/HBO-Max-Logo.png" alt="StreamingDescripcionSin" class="w-100 img-fluid" id="Titulo-HboImg">
+                            <img src="img/HBO-Max-Logo.png" alt="StreamingDescripcionSin" style="max-height: 250px;" class="w-100 img-fluid" id="Titulo-HboImg">
                         </div>
                     </div>
                 </div>
             </section>
+
             <section>
                 <div class="container mt-5 mb-3">
                     <div class="row">
-                        <div class="col-8 aling-self-center">
+                        <div class="col-8 aling-self-center" style="background-color: white;">
                             <h3 id="YouTube-Titulo">¿De que trata?</h3>
                             <p>Youtube es una red social que permite alojar y compartir videos que han sido creados por los usuarios. A diferencia de otros sitios web similares, Youtube tiene un amplio número de participantes y una cantidad muy extensa de información y visitas diarias.</p>
-                            <button class = "btn btn-primary", type = "button" href= "">
+                            <a class = "btn btn-primary", type = "button" href= "https://www.youtube.com/">
                                 Ir a Youtube
-                            </button>
+                            </a>
                         </div>
                         <div class="col-4">
-                            <img src="img/youtubepremium.png" alt="StreamingDescripcionSin" class="w-100 img-fluid" id="Titulo-YouTubeImg">
+                            <img src="img/youtubepremium.png" alt="StreamingDescripcionSin" style="max-height: 250px;" class="w-100 img-fluid" id="Titulo-YouTubeImg">
                         </div>
                     </div>
                 </div>
             </section>
+
             <section>
                 <div class="container mt-5 mb-3">
                     <div class="row">
-                        <div class="col-8 aling-self-center">
+                        <div class="col-8 aling-self-center" style="background-color: white;">
                             <h3 id="Spotify-Titulo">¿De que trata?</h3>
                             <p>Spotify es un servicio de música, pódcasts y vídeos digitales que te da acceso a millones de canciones y a otro contenido de creadores de todo el mundo.</p>
                             <br>
                             <p>Las funciones básicas, como escuchar música, son totalmente gratis, pero también tienes la opción de mejorar tu cuenta con Spotify Premium.</p>
                             <br>
                             <p>Tanto si tienes Premium como si no, puedes hacer lo siguiente: Recibir recomendaciones basadas en tus gustos, crear colecciones de música y pódcasts.</p>
-                            <button class = "btn btn-primary", type = "button" href= "">
+                            <a class = "btn btn-primary", type = "button" href= "https://www.spotify.com/bo/">
                                 Ir a Spotify
-                            </button>
+                            </a>
                         </div>
                         <div class="col-4">
-                            <img src="img/spotify-premium-logo-klein.png" alt="StreamingDescripcionSin" class="w-100 img-fluid" id="Titulo-SpotifyImg">
+                            <img src="img/spotify-premium-logo-klein.png" alt="StreamingDescripcionSin" style="max-height: 200px;" class="w-100 img-fluid" id="Titulo-SpotifyImg">
                         </div>
                     </div>
                 </div>
             </section>
         </main>
+
         <section>
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
-                aria-labelledby="offcanvasExampleLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <div>
-                        Some text as placeholder. In real life you can have the elements you have chosen. Lik, text, images, lists, etc.
+            <!-- Modal -->
+            <div class="modal fade" id="mensajeinformativo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                              Modal title
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> </button>
+                        </div>
+                        <div class="modal-body">
+                            <p id="mensajemodalinfo"></p>
+                        </div>
                     </div>
-                    <div class="dropdown mt-3">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                        data-bs-toggle="dropdown">
-                        Dropdown button
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </div>
-                    
                 </div>
             </div>
         </section>
-        <footer>
 
+        <footer>
+            <div class="container-footer-all">
+                <div class="container-body">
+                    <div class="colum1">
+                        <h1>Información del programador</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil molestias sit facere asperiores nisi dolore corporis nesciunt aperiam fuga, cum totam aut libero rem repellat sed similique ipsam id sint!
+                        </p>
+                    </div>
+                    <div class="colum2">
+                        <h1>Redes Sociales</h1>
+                        <div class="row">
+                            <img id="imagenFoter" src="img/facebook.png">
+                            <label>Siguenos en facebook</label>
+                        </div>
+                        <div class="row">
+                            <img id="imagenFoter" src="img/instagram_icon_logo.png">
+                            <label>Siguenos en Intagram</label>
+                        </div>
+                    </div>
+                    <div class="colum3">
+                        <h1>Informacion Contactos</h1>
+                        <div class="row2">
+                            <img id="imagenFoter" src="img/whatt.png">
+                            <label>321 821 7729</label>
+                        </div>
+                        <div class="row2">
+                            <img id="imagenFoter" src="img/logo-Gmail-1.png">
+                            <label for="">julianmolia902@gmail.com</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-footer">
+                <div class="footer">
+                    <div class="copyright">
+                        @ 2022 Todos Los Derechos Reservados | Nagtimus
+                    </div>
+                    <div class="information">
+                        <a href="#">Informacion Compañias<a> | <a href="#">Privación y Politica</a> | <a href="#">Terminos y Condiciones</a>
+                    </div>
+                </div>
+            </div>
         </footer>
 
-        
-        <script src="js/plataformaEntretenimiento.js"></script>
         <script src="js/eventos.js"></script>
-        <script src="js/promociones.js"></script>
+        <script src="js/firebase.js" type="module"></script>
+        <script src="js/registro.js" type="module"></script>
+        <script src="wow.min.js"></script>
+
+        <script>new WOW().init();</script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/3675f85246.js" crossorigin="anonymous"></script>
     </body>
 </html>
